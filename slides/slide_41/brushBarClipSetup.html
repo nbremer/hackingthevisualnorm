@@ -1,0 +1,26 @@
+<style>
+	#brush-bar-clip-setup {
+		top: 40px !important;
+	}
+	#brush-bar-clip-setup .slide-image {
+		height: 800px;
+		position: relative; 
+		margin: 0 auto;
+	}
+</style>
+
+<section id="brush-bar-clip-setup">
+	<div class="slide-image">
+		<img class="img-stack" src="slides/slide_41/brushable_bar_clip_setup_1.png" />
+		<img class="fragment img-stack" data-fragment-index="1" src="slides/slide_41/brushable_bar_clip_setup_2.png" />
+	</div>
+
+	<span class="fragment" data-fragment-index="1" >
+		<pre style="width: 60%"><code class="language-js" data-noescape data-trim>
+// Calculate new position to sync the visible section of the brush and main chart
+var mainChartExtent = brush.extent( calculate... ); 
+// Send new top and bottom pixel location to main chart
+main_update(mainChartExtent);
+		</code></pre>
+	</span>
+</section>

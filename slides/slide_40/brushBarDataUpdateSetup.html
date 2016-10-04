@@ -1,0 +1,23 @@
+<style>
+	#brush-bar-data-update-setup {
+		top: 40px !important;
+	}
+	#brush-bar-data-update-setup .slide-image {
+		height: 800px;
+		position: relative; 
+		margin: 0 auto;
+	}
+</style>
+
+<section id="brush-bar-data-update-setup">
+	<div class="slide-image">
+		<img class="img-stack" src="slides/slide_40/brushable_bar_data_update_setup.png" />
+	</div>
+
+	<pre style="width: 60%"><code class="language-js" data-noescape data-trim>
+// Find out which bars lie inside the brush area
+var selectedData = brush.extent( calculate... ); 
+// Update the main bar chart with the new data
+main_update(selectedData);
+	</code></pre>
+</section>

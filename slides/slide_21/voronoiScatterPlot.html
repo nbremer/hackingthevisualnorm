@@ -1,0 +1,185 @@
+<style>
+
+	#voronoi-scatter-plot .chart-title {
+		color: #9d9d9d;
+		font-size: 32px;
+		font-weight: 300;
+		padding-top: 40px;
+	}
+
+	/**** Chart ****/
+	#voronoiScatterPlot .title {
+		text-anchor: end;
+		font-size: 16px;
+	}	
+
+	#voronoiScatterPlot .axis path,
+	#voronoiScatterPlot .axis line {
+		fill: none;
+		stroke: #B3B3B3;
+		shape-rendering: crispEdges;
+	}
+	#voronoiScatterPlot .axis text {
+		font-size: 14px;
+		fill: #6B6B6B;
+	}
+
+	#voronoiScatterPlot .voronoi {
+		fill: none;
+		stroke: #2074A0;
+		stroke-opacity: 0;
+		stroke-width: 1.5px;
+	}
+
+	#voronoiScatterPlot .guide {
+		pointer-events: none;
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	/**** Tooltip ****/
+
+	#voronoi-scatter-plot #circle-tooltip {
+		position: absolute;
+		text-align: center;
+		opacity: 0;
+	}
+
+	#voronoi-scatter-plot .popover {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  z-index: 1060;
+	  display: none;
+	  max-width: 276px;
+	  padding: 10px 15px 10px 15px;
+	  font-style: normal;
+	  font-weight: normal;
+	  letter-spacing: normal;
+	  line-break: auto;
+	  line-height: 1.42857143;
+	  text-align: left;
+	  text-align: start;
+	  text-decoration: none;
+	  text-shadow: none;
+	  text-transform: none;
+	  white-space: normal;
+	  word-break: normal;
+	  word-spacing: normal;
+	  word-wrap: normal;
+	  font-size: 14px;
+	  background-color: #ffffff;
+	  -webkit-background-clip: padding-box;
+	          background-clip: padding-box;
+	  border: 1px solid #e3e3e3;
+	  border: 1px solid rgba(0, 0, 0, 0.1);
+	  /*border-radius: 3px;*/
+	  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	  pointer-events: none;
+	}
+	#voronoi-scatter-plot .popover.top {
+	  margin-top: -10px;
+	}
+	#voronoi-scatter-plot .popover > .arrow,
+	#voronoi-scatter-plot .popover > .arrow:after {
+	  position: absolute;
+	  display: block;
+	  width: 0;
+	  height: 0;
+	  border-color: transparent;
+	  border-style: solid;
+	}
+	#voronoi-scatter-plot .popover > .arrow {
+	  border-width: 8px;
+	}
+	#voronoi-scatter-plot .popover > .arrow:after {
+	  border-width: 8px;
+	  content: "";
+	}
+	#voronoi-scatter-plot .popover.top > .arrow {
+	  left: 50%;
+	  margin-left: -8px;
+	  border-bottom-width: 0;
+	  border-top-color: #e3e3e3;
+	  border-top-color: rgba(0, 0, 0, 0.1);
+	  bottom: -8px;
+	}
+	#voronoi-scatter-plot .popover.top > .arrow:after {
+	  content: " ";
+	  bottom: 1px;
+	  margin-left: -8px;
+	  border-bottom-width: 0;
+	  border-top-color: #ffffff;
+	}
+
+	#voronoi-scatter-plot #voronoi-tooltip-content {
+		text-align: center;
+	}
+
+	/**** Legend ****/
+	#voronoiScatterPlot .legendCircle {
+		stroke-width:1;
+		stroke:#999;
+		stroke-dasharray:2 2;
+		fill:none;
+	}
+
+	#voronoiScatterPlot .legendLine {
+		stroke-width: 1;
+		stroke: #D1D1D1;
+		shape-rendering: crispEdges;
+	}
+
+	#voronoiScatterPlot .legendTitle {
+		fill: #1A1A1A;
+		color: #1A1A1A;
+		text-anchor: middle;
+		font-size: 18px;
+	}
+
+	#voronoiScatterPlot .legendText {
+		fill: #949494;
+		text-anchor: start;
+		font-size: 14px;
+	}
+	#voronoiScatterPlot .legendCircleText {
+		fill: #949494;
+		text-anchor: end;
+		font-size: 12px;
+	}
+</style>
+
+<section id="voronoi-scatter-plot">
+	<div class="chart-title"></div>
+	
+	<div id="voronoiScatterPlot"></div>
+
+	<div id="circle-tooltip">
+		<div id="circle-tooltip-inner" class="popover fade top in" role="tooltip" style="display: block;">
+			<div class="arrow" style="left: 50%"></div>
+			<div class="tooltip-inner">
+				<div id="voronoi-tooltip-content" class="popover-content"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fragment fade-in" data-fragment-index="1">
+		<div class="fragment fade-out" data-fragment-index="6">
+			<pre style="width: 50%"><code class="language-js" data-noescape data-trim>
+/* Set tooltip on circle */
+circles.on("mouseover", function(d,i) {
+	var el = d3.select(this);
+	/* ... append tooltip to el */
+});
+			</code></pre>
+		</div>
+	</div>
+
+	<span class="fragment" data-fragment-index="2"></span>
+	<span class="fragment" data-fragment-index="3"></span>
+	<span class="fragment" data-fragment-index="4"></span>
+	<span class="fragment" data-fragment-index="5"></span>
+	<span class="fragment" data-fragment-index="6"></span>
+
+</section>

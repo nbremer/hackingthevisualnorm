@@ -1,0 +1,67 @@
+<style>	
+
+  .brushable-bar.title {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 56px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    font-weight: 300;
+  }
+
+  .brushable-bar.note {
+    font-size: 12px;
+    max-width: 620px;
+    margin: 0 auto;
+    padding-top: 30px;
+    color: #ababab;
+    font-weight: 300;
+  }
+
+	.brushable-bar .axis text {
+      font-size: 16px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      fill: #3b3b3b;
+    }
+
+	.brushable-bar .axis.label {
+      font-size: 22px;
+      font-weight: 400;
+      text-anchor: middle;
+      fill: #3b3b3b;
+    }
+
+    .brushable-bar .y.axis line {
+      fill: none;
+    }
+
+    .brushable-bar .x.axis line {
+      fill: none;
+      stroke: #e0e0e0;
+      shape-rendering: crispEdges;
+    }
+
+    .brushable-bar .axis path {
+      display: none;
+    }
+
+    .brushable-bar .brush .extent {
+      fill-opacity: .125;
+      shape-rendering: crispEdges;
+    }
+
+    .brushable-bar .resize {
+      display: inline !important; /* show when empty */
+      fill: #7A7A7A;
+      fill-opacity: 1;
+      stroke: #7A7A7A;
+      stroke-width: 2px;
+    }
+</style>
+
+<section id="brush-bar-update-data">
+	<div class="brushable-bar title">Top 50 worldwide grossing movies</div>
+	<div id="brushBarUpdateData" class="brushable-bar"></div>
+	<div class="brushable-bar note">Not adjusted for inflation | <a href = "http://www.boxofficemojo.com/alltime/world/">Data from Box Office Mojo</a></div>
+
+</section>
