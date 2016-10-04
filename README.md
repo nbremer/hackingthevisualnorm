@@ -21,7 +21,7 @@ If, for whatever strange reason, you don't want to use Chrome, here are some qui
 
 - Safari can't handle the moving slider in the "intro-slider", so I've deactivated the slider movement for Safari
 - The same is true for the "intro-brush" slide where I'm just showing an entire rainbow instead of a sliding one in Safari
-- The growing lines in the "intro-shopperdna" seem to disappear sometimes, haven't looked into why
+- The growing lines in the "intro-shopperdna" seem to disappear sometimes in Safari and have strange artifacts in Firefox, haven't looked into why
 - Never checked in IE, I'm guessing it would just be too horrible to look at...
 
 Inside the slides folder you'll see another layer of folders. Here each slide has gotten its own folder, but the numbering is based on the order in which I made them and not on the order on which they appear on the screen (this you can find in the index.html file).
