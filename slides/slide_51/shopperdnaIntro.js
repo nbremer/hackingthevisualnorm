@@ -21,12 +21,12 @@ pt.shopperdnaIntro.init = function() {
 	var height = $(".slides").height()*0.75 - margin.top - margin.bottom;
 				
 	//SVG container
-	pt.voronoiIntro.svg = d3.select('#intro-shopperdna #shopperdnaIntro')
+	pt.shopperdnaIntro.svg = d3.select('#intro-shopperdna #shopperdnaIntro')
 		.append("svg")
 		.attr("width", width + margin.left + margin.right)
 		.attr("height", height + margin.top + margin.bottom);
 		
-	var svg = pt.voronoiIntro.svg.append("g")
+	var svg = pt.shopperdnaIntro.svg.append("g")
 		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 	///////////////////////////////////////////////////////////////////////////
